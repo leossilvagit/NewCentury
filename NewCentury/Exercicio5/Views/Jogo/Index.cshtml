@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Início";
+}
+
+<h2>Bem-vindo ao Jogo de Adivinhação!</h2>
+
+<form method="post" asp-action="Iniciar">
+    <label>Nome do Jogador:</label>
+    <input type="text" name="nome" required />
+    <br />
+    <label>Dificuldade:</label>
+    <select name="dificuldade">
+        <option value="Facil">Fácil</option>
+        <option value="Medio">Médio</option>
+        <option value="Dificil">Difícil</option>
+    </select>
+    <br />
+    <button type="submit">Começar</button>
+</form>

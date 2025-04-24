@@ -1,0 +1,17 @@
+﻿@model Exercicio5.Models.Jogador
+
+<h2>Histórico de Tentativas de @Model.Nome</h2>
+
+<table>
+    <tr><th>Data</th><th>Número</th><th>Resultado</th></tr>
+    @foreach (var t in Model.Historico)
+    {
+        <tr>
+            <td>@t.DataHora</td>
+            <td>@t.Numero</td>
+            <td>@t.Resultado</td>
+        </tr>
+    }
+</table>
+
+<a asp-action="Index">Voltar ao início</a>
